@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title> Booking page </title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+font-family:arial,sans-serif;
+font-size: 52 px;
+line-height:2.0;
+color:#333;}
+
+
+button[type="submit"]:hover{background-color:#555;}
+
+button[type="submit"]{
+background-color:#333;
+color:#fff;
+padding:10px 20px;
+border: none;
+border-radius:5px;
+cursor:pointer;}
+
+input,select{
+display:blocl;
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+margin-bottom:10px;}
+
+form label{
+display:block;
+margin-bottom:5px;}
+
+h1{
+margin-bottom:20px;}
+
+main{
+max-width:800px;
+margin:0 auto;
+padding:20px;}
+
+header{
+background color:#f2f2f2;
+padding:10px;}
+
+nav ul {
+list-style :none;
+margin:0;
+padding:0;
+}
+
+nav ul li {
+display:inline-block;
+margin-right:20px;}
+
+@media screen and (max-width:600 px){main{padding:10 px;}
+</style>
+</head>
+
+<body>
+<header>
+<h1> Makao Hotels </h1>
+<nav>
+<ul>
+<li> <a href="home.html"> Home <a/> </li>
+<li> <a href="hotels.html"> Hotels <a/> </li>
+<li> <a href="booking.html"> Book now </a> </li>
+<li><a href="contact.html"> Contact us </a></li>
+<li> <a href="about.html"> About <a/> </li>
+</ul>
+</nav>
+</header>
+<main>
+
+<h1> Book a room with us </h1>
+<form action="submit_booking.php" method="post">
+<label for="name"> Name </label>
+<input type="text" id="name" name="name" required>
+<label for="email"> Email </label>
+<input type="email" id="email" name="email" required>
+<label for="phone"> Phone number </label>
+<input type="tel" id="phone" name="phone" required>
+<label for="room-type"> Room Type </label>
+<select id="room-type" name="room-type">
+<option value="standard"> Standard</option>
+<option value="Deluxe"> Deluxe </option>
+<option value="suite"> Suite </option>
+<option value="parlour"> Parlour </option>
+</select>
+
+<label for="check-in"> Check-in date </label>
+<input type="date" id="check-in" name="check-in" required>
+<label for="check-out"> Check-out date </label>
+<input type="date" id="check-out" name="check-out" required>
+<button type="submit"> Submit booking</button>
+</form>
+</main>
+<footer>
+<p> &copy;Makao hotel booking system. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+
+
+
